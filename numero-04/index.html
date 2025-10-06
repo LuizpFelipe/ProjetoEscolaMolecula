@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etano - Informações</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #00abd6;
+            color: #333;
+            padding: 20px;
+        }
+
+        .titulo-pagina {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .titulo-pagina h1 {
+            font-size: 2.5em;
+            color: #001aff;
+        }
+
+        .video-molecula {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .video-molecula video {
+            width: 480px; /* tamanho reduzido */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .resumo-molecula,
+        .pesquisa-molecula {
+            background-color: #fafafa;
+            padding: 20px;
+            margin: 0 auto 30px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .resumo-molecula h2,
+        .pesquisa-molecula h2 {
+            margin-bottom: 10px;
+            color: #ff0000;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+
+        @media (max-width: 600px) {
+            .resumo-molecula,
+            .pesquisa-molecula {
+                padding: 15px;
+            }
+
+            .titulo-pagina h1 {
+                font-size: 2em;
+            }
+
+            .video-molecula video {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo-pagina">
+        <h1>Etano</h1>
+    </div>
+
+    <div class="video-molecula">
+        <video autoplay loop muted>
+            <source src="molecula.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="resumo-molecula">
+        <h2>Resumo da Molécula</h2>
+        <p>
+O etano (C₂H₆) é um hidrocarboneto saturado encontrado no gás natural e no petróleo. É um gás incolor e inflamável, usado principalmente na produção de etileno (C₂H₄), que serve para fabricar plásticos. Seu ponto de ebulição é de -88,6 °C, e ele é mais leve que o ar. Além de ser uma matéria-prima industrial, o etano também pode ser usado como combustível.
+        </p>
+    </div>
+
+    <div class="pesquisa-molecula">
+        <h2>Pesquisa</h2>
+        <p>
+            O etano é composto por dois átomos de carbono ligados por uma ligação simples (ligação sigma), e cada carbono é ligado a três átomos de hidrogênio. Sua estrutura molecular é representada como CH₃-CH₃.
+</p>
+            À temperatura e pressão ambientes, o etano é um gás incolor, inodoro e altamente inflamável. No entanto, quando comprimido a pressões mais elevadas ou resfriado a temperaturas mais baixas, o etano pode ser convertido em um líquido.        </p>
+        <p>
+            A história do etano começa em 1825, quando o cientista Michael Faraday isolou o gás a partir do gás natural, sendo uma das primeiras descobertas importantes na química dos hidrocarbonetos. Em 1849, o químico August Wilhelm von Hofmann nomeou o composto de "etano", em referência ao éter, dado a sua estrutura química semelhante.
+</p>
+            Embora tenha sido identificado no século XIX, foi no início do século XX que o etano passou a ser amplamente utilizado na indústria química, principalmente na produção de etileno através do processo de cracking. A partir da metade do século XX, com a expansão da indústria petroquímica e a crescente demanda por plásticos, o etano tornou-se um dos principais insumos da indústria. Hoje, ele é crucial na produção de plásticos, combustíveis e outros produtos químicos.        </p>
+        <p>
+            O etano é principalmente utilizado para a produção de etileno (C₂H₄) através do processo de cracking, que é a base para a fabricação de plásticos como polietileno e polipropileno. Além disso, é empregado como combustível em algumas indústrias e geradores de energia. Também serve como matéria-prima na produção de outros produtos químicos, como ácido acético e borrachas sintéticas        </p>
+    </div>
+</body>
+</html>

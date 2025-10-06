@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propano - Informações</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #8cdbff;
+            color: #000000;
+            padding: 20px;
+        }
+
+        .titulo-pagina {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .titulo-pagina h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+
+        .video-molecula {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .video-molecula video {
+            width: 480px; 
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgb(0, 26, 255);
+            margin-bottom: 20px;
+        }
+
+        .resumo-molecula,
+        .pesquisa-molecula {
+            background-color: #51d9fc;
+            padding: 20px;
+            margin: 0 auto 30px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(49, 52, 255);
+        }
+
+        .resumo-molecula h2,
+        .pesquisa-molecula h2 {
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+
+        @media (max-width: 600px) {
+            .resumo-molecula,
+            .pesquisa-molecula {
+                padding: 15px;
+            }
+
+            .titulo-pagina h1 {
+                font-size: 2em;
+            }
+
+            .video-molecula video {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="titulo-pagina">
+            <h1>Propano</h1>
+        </div>
+        
+        <div class="video-molecula">
+            <video autoplay loop muted>
+                <source src="molecula.mp4" type="video/mp4" />
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    
+    <div class="resumo-molecula">
+        <h2>Resumo da Molécula</h2>
+        <p>
+            O propano é um hidrocarboneto saturado (alcano) com a fórmula C₃H₈, composto por três átomos de carbono e oito de hidrogênio. Ele é um gás inflamável à temperatura ambiente e pode ser liquefeito sob pressão. É amplamente utilizado como combustível em aquecimento, fogões e veículos, além de ser importante na indústria para a produção de plásticos e outros produtos químicos. Sua combustão gera dióxido de carbono (CO₂) e água (H₂O), liberando energia. Por ser inflamável e mais pesado que o ar, o propano exige cuidados no manuseio e armazenamento.
+        </p>
+    </div>
+    
+    <div class="pesquisa-molecula">
+        <h2>Pesquisa</h2>
+        <p>
+            O propano (C₃H₈) é um gás inflamável e facilmente liquefeito sob pressão. É amplamente usado como combustível residencial, para aquecimento, fogões, veículos e churrasqueiras portáteis. Além disso, serve como matéria-prima na indústria química para plásticos e outros compostos.
+        </p>
+        <p>
+            O propano tem baixo impacto ambiental quando queimado corretamente, produzindo menos poluentes que outros combustíveis fósseis. Um odor é adicionado ao gás incolor para facilitar a detecção de vazamentos.
+        </p>
+        <p>
+            Por ser mais pesado que o ar, o propano pode acumular-se em locais baixos, exigindo armazenamento cuidadoso em áreas ventiladas e longe de fontes de ignição para evitar riscos de explosão.
+        </p>
+    </div>
+    <div class="detalhes-molecula" style="background-color: #51d9fc; padding: 20px; margin: 0 auto 30px; max-width: 800px; border-radius: 8px; box-shadow: 0 2px 8px rgb(49, 52, 255);">
+        <h2>Detalhes da Molécula de Propano</h2>
+        <ul style="list-style-type: disc; padding-left: 20px; color: #000;">
+            <li><strong>Fórmula Molecular:</strong> C<sub>3</sub>H<sub>8</sub></li>
+            <li><strong>Peso Molecular:</strong> 44,10 g/mol</li>
+            <li><strong>Estrutura Molecular:</strong> Molécula linear com três átomos de carbono ligados em cadeia, com hidrogênios preenchendo as ligações restantes.</li>
+            <li><strong>Tamanho da Molécula:</strong> Aproximadamente 4,3 Å (ângstroms) de comprimento.</li>
+            <li><strong>Componentes:</strong> 3 átomos de carbono (C) e 8 átomos de hidrogênio (H).</li>
+            <li><strong>Estado Físico:</strong> Gás incolor, inflamável à temperatura ambiente.</li>
+            <li><strong>Ponto de Ebulição:</strong> -42,1 °C</li>
+            <li><strong>Ponto de Fusão:</strong> -187,7 °C</li>
+            <li><strong>Polaridade:</strong> Apolar (devido à simetria e ligações covalentes não polares)</li>
+            <li><strong>Aplicações:</strong> Combustível doméstico, gás para churrasqueiras, matéria-prima para a indústria petroquímica.</li>
+        </ul>
+    </div>
+</body>
+</html>

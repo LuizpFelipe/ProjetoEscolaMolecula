@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Etanol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 80px; /* espaço para o footer fixo */
+        }
+
+        header {
+            margin-top: 40px;
+            text-align: center;
+            max-width: 640px;
+            width: 90%;
+        }
+
+        .video-container {
+            width: 640px;
+            max-width: 90vw;
+            height: 360px;
+            margin: 20px auto 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .conteiner-conteudo {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .card h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 2rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 8px;
+        }
+
+        .card h3 {
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #0056b3;
+        }
+
+        .card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        pre {
+            font-family: monospace;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .header-content p {
+                font-size: 1rem;
+            }
+
+            .video-container {
+                height: 200px;
+            }
+
+            .conteiner-conteudo {
+                width: 95%;
+                font-size: 1rem;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Bem-vindo à Página do Etanol</h1>
+            <p>Descubra os aspectos e aplicações desta molécula importante.</p>
+        </div>
+    </header>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="molecula.mp4" type="video/mp4" />
+            Seu navegador não suporta o vídeo.
+        </video>
+    </div>
+
+    <div class="conteiner-conteudo">
+        <div class="card resumo-molecula">
+            <h2>Resumo sobre o Etanol</h2>
+            <p>
+                O etanol (C₂H₅OH) é uma molécula composta por carbono, hidrogênio e oxigênio, amplamente utilizado em várias indústrias. Ele pode ser produzido por fermentação de açúcares ou hidratação do eteno. Possui diversas aplicações, como biocombustível (misturado à gasolina ou puro), solvente industrial, e ingrediente principal em bebidas alcoólicas.
+            </p>
+            <p>
+                Fisicamente, o etanol tem um ponto de ebulição de 78,37°C e é altamente solúvel em água. Quimicamente, ele pode reagir com ácidos, formando ésteres, e com halogênios, formando haletos de alquila. Seu consumo em excesso pode causar problemas de saúde, como alcoolismo e doenças hepáticas.
+            </p>
+            <p>
+                Como biocombustível, o etanol é considerado mais sustentável do que combustíveis fósseis, mas sua produção também gera impactos ambientais, como o uso de recursos naturais. Além disso, ele é regulado legalmente em muitos países devido aos riscos associados ao seu consumo excessivo.
+            </p>
+            <p>
+                Em resumo, o etanol é uma substância versátil com grande importância econômica e social, mas que exige cuidados quanto ao seu uso e impacto ambiental.
+            </p>
+        </div>
+
+        <div class="card pesquisa-molecula">
+            <h2>Pesquisa sobre o Etanol</h2>
+            <p>
+                O etanol, também conhecido como álcool etílico, é uma molécula simples composta por carbono, hidrogênio e oxigênio, com fórmula molecular C₂H₅OH. Ele é amplamente utilizado como combustível, solvente e, é claro, como ingrediente ativo em bebidas alcoólicas. Vamos explorar alguns aspectos importantes sobre o etanol.
+            </p>
+
+            <h3>1. Estrutura Química:</h3>
+            <pre>
+ H   H
+ |   |
+H-C-C-OH
+ |   |
+ H   H
+            </pre>
+
+            <p>
+                Ele tem uma cadeia de dois átomos de carbono (C) ligada a cinco átomos de hidrogênio (H) e uma hidroxila (-OH), que é o grupo funcional característico dos álcoois.
+            </p>
+
+            <h3>2. Propriedades Físicas:</h3>
+            <ul>
+                <li>Ponto de ebulição: 78,37°C (em pressão atmosférica).</li>
+                <li>Ponto de fusão: -114,1°C.</li>
+                <li>Densidade: Aproximadamente 0,789 g/cm³ (a 20°C).</li>
+                <li>Solubilidade: Altamente solúvel em água, devido à hidroxila (-OH).</li>
+            </ul>
+
+            <h3>3. Produção:</h3>
+            <p>
+                O etanol pode ser produzido por fermentação de açúcares ou pela hidratação do eteno.
+            </p>
+
+            <h3>4. Usos:</h3>
+            <p>
+                Combustível, indústria farmacêutica, cosmética, bebidas alcoólicas, entre outros.
+            </p>
+
+            <h3>5. Propriedades Químicas:</h3>
+            <p>
+                Reage formando ésteres, haletos de alquila e oxida a ácido acético.
+            </p>
+
+            <h3>6. Efeitos sobre a Saúde:</h3>
+            <p>
+                Consumo moderado pode ser relaxante; em excesso, pode causar alcoolismo, doenças hepáticas e intoxicação.
+            </p>
+
+            <h3>7. Aspectos Ambientais:</h3>
+            <p>
+                Considerado biocombustível mais sustentável, porém com impactos ambientais da produção.
+            </p>
+
+            <h3>8. História do Etanol:</h3>
+            <p>
+                Uso antigo em bebidas fermentadas; industrialmente produzido desde o século XIX.
+            </p>
+
+            <h3>9. Aspectos Legais:</h3>
+            <p>
+                Regulamentado de forma variável entre países; o etanol para consumo é frequentemente desnaturalizado para evitar uso indevido.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
