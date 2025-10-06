@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000000;
     text-align: center;
 }
 
@@ -25,6 +25,7 @@ h1,
 h2 {
     color: #ffffff;
     margin: 10px 0;
+    text-shadow: 10px 10px 10px rgb(11, 11, 63);
 }
 
 h1 {
@@ -39,9 +40,9 @@ h2 {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #00000063;
+    background-color: #1a191981;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.534);
+    box-shadow: 10px 10px 10px rgba(13, 9, 53, 0.315);
 }
 
 a {
@@ -62,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #b30b0b9a;
+    background-color: #470101a8;
     transform: scale(1.1);
 }
 
@@ -75,25 +76,19 @@ button:hover {
     margin: 0 auto;
 }
 
-/* Max 4 botões por linha */
 .button-wrapper a {
     flex: 1 1 calc(25% - 10px);
-    /* 4 botões por linha */
     min-width: 200px;
-    /* Tamanho mínimo do botão */
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 900px) {
     .button-wrapper a {
         flex: 1 1 calc(50% - 10px);
-        /* 2 botões por linha */
     }
 }
 
 @media (max-width: 600px) {
     .button-wrapper a {
         flex: 1 1 calc(100% - 10px);
-        /* 1 botão por linha */
     }
 }
