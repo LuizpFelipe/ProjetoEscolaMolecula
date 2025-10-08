@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metano</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffffdd;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 40px;
+            backdrop-filter: blur(8px);
+        }
+
+        .titulo-pagina {
+            background-color: #00796b;
+            padding: 35px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 121, 107, 0.5);
+            margin-bottom: 40px;
+        }
+
+        .titulo-pagina h1 {
+            font-size: 3.8rem;
+            color: #e0f2f1;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .video-molecula {
+            margin-bottom: 40px;
+        }
+
+        .video-molecula video {
+            width: 700px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .video-molecula video:hover {
+            transform: scale(1.05);
+        }
+
+        .resumo-molecula, .pesquisa-molecula {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+            text-align: left;
+        }
+
+        .resumo-molecula h1, .pesquisa-molecula h2 {
+            color: #004d40;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .resumo-molecula p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #37474f;
+        }
+
+        .pesquisa-molecula ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pesquisa-molecula li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 1.05rem;
+            color: #455a64;
+        }
+
+        .pesquisa-molecula li:last-child {
+            border-bottom: none;
+        }
+
+        .pesquisa-molecula li span {
+            font-weight: 700;
+            color: #00796b;
+        }
+
+        /* Responsividade */
+        @media (max-width: 800px) {
+            .video-molecula video {
+                width: 100%;
+            }
+            .titulo-pagina h1 {
+                font-size: 2.8rem;
+            }
+            .resumo-molecula h1, .pesquisa-molecula h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo-pagina">
+            <h1>Metano (CH₄)</h1>
+        </div>
+
+        <div class="video-molecula">
+            <video autoplay loop muted aria-label="Animação da molécula de metano">
+                <source src="molecula.mp4" type="video/mp4" />
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+
+        <div class="resumo-molecula">
+            <h1>O que é o Metano?</h1>
+            <p>O metano (CH₄) é um gás composto por um átomo de carbono e quatro átomos de hidrogênio. É incolor, inodoro e altamente inflamável. O metano é o principal componente do gás natural e é amplamente utilizado como combustível. Além disso, é um gás de efeito estufa potente, sendo responsável por uma significativa contribuição para o aquecimento global.</p>
+        </div>
+
+        <div class="pesquisa-molecula">
+            <h2>Características da Molécula de Metano</h2>
+            <ul>
+                <li><span>Fórmula Molecular:</span> CH₄</li>
+                <li><span>Estrutura:</span> A molécula de metano tem uma estrutura tetraédrica, com o átomo de carbono no centro e os átomos de hidrogênio posicionados nos vértices do tetraedro.</li>
+                <li><span>Estado Físico:</span> Gás à temperatura ambiente.</li>
+                <li><span>Temperatura de Fusão:</span> -182,5°C</li>
+                <li><span>Temperatura de Ebulição:</span> -161,5°C</li>
+                <li><span>Pressão de Vapor:</span> 1,3 atm (a 25°C)</li>
+                <li><span>Densidade (g/L):</span> 0,656 g/L (a 0°C e 1 atm)</li>
+                <li><span>Peso Molecular:</span> 16,04 g/mol</li>
+                <li><span>Índice de Reatividade:</span> O metano é relativamente estável em condições normais, mas pode reagir com oxigênio (O₂) em uma reação de combustão, formando dióxido de carbono (CO₂) e água (H₂O).</li>
+                <li><span>Usos Comuns:</span> O metano é amplamente utilizado como combustível (gás natural) para aquecimento, geração de eletricidade e como matéria-prima na produção de produtos químicos, como amônia e metanol.</li>
+                <li><span>Impacto Ambiental:</span> O metano é um gás de efeito estufa com um potencial de aquecimento global 25 vezes maior que o dióxido de carbono (CO₂) em um período de 100 anos.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at top left, #000010, #000);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .titulo-pagina {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(90deg, #0ff, #00f, #f0f);
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0,255,255,0.5);
+            animation: brilho 3s infinite alternate;
+        }
+    
+        .titulo-pagina h1 {
+            font-size: 3em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+    
+        @keyframes brilho {
+            from { text-shadow: 0 0 10px #0ff, 0 0 20px #00f; }
+            to { text-shadow: 0 0 20px #f0f, 0 0 30px #0ff; }
+        }
+    
+        .video-molecula {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+    
+        .video-molecula video {
+            width: 70%;
+            border: 2px solid #0ff;
+            border-radius: 15px;
+            box-shadow: 0 0 30px #0ff;
+            transition: 0.3s ease;
+        }
+    
+        .video-molecula video:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px #f0f;
+        }
+    
+        .resumo-molecula {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(0,255,255,0.3);
+            box-shadow: 0 0 30px rgba(0,255,255,0.3);
+            width: 80%;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(6px);
+            transition: 0.3s ease;
+        }
+    
+        .resumo-molecula:hover {
+            box-shadow: 0 0 40px #0ff, 0 0 80px #0ff;
+        }
+    
+        .resumo-molecula h2 {
+            color: #00ffff;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px #0ff;
+        }
+    
+        .resumo-molecula p {
+            text-align: justify;
+            color: #ccc;
+            font-size: 1.05em;
+        }
+    
+        .pesquisa-molecula {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-top: 2px solid #0ff;
+            box-shadow: 0 -5px 20px rgba(0,255,255,0.2);
+        }
+    
+        .pesquisa-molecula h2 {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+        }
+    
+        .pesquisa-molecula p {
+            color: #ccc;
+            font-style: italic;
+        }
+    
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(45deg, rgba(0,255,255,0.05) 0, rgba(0,255,255,0.05) 1px, transparent 2px, transparent 4px);
+            z-index: -1;
+            animation: mover 20s linear infinite;
+        }
+    
+        @keyframes mover {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+    
+        /* ======= RESPONSIVIDADE ======= */
+        @media (max-width: 768px) {
+            .video-molecula video {
+                width: 90%;
+            }
+    
+            .resumo-molecula {
+                width: 90%;
+                padding: 20px;
+            }
+    
+            .titulo-pagina h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="titulo-pagina">
+        <h1>Metano </h1>
+        <h1>trabalho de quimica</h1>
+    </div>
+
+    <div class="video-molecula">
+        <video autoplay loop muted width="50%" controls>
+            <source src="molecula.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="resumo-molecula">
+        <h2>resumo molecula do metano </h2>
+    <p>
+
+        O metano é um gás com grande importância na sociedade moderna, principalmente por seu uso como fonte de energia e matéria-prima para a indústria química. No entanto, suas potentes propriedades de efeito estufa e as emissões significativas provenientes de fontes naturais e antropogênicas representam uma ameaça crescente para o meio ambiente. É essencial que novas tecnologias e políticas públicas sejam desenvolvidas para reduzir as emissões de metano, mitigar os impactos das mudanças climáticas e promover uma utilização mais sustentável desse recurso natural.
+
+
+     </p>
+
+
+    </div>
+    <div class="pesquisa-molecula">
+        <h2>pesquisa sobre o metano</h2>
+        <p>
+            O Metano: Composição, Propriedades, Fontes, Usos e Impactos Ambientais
+    O metano (CH₄) é um dos gases mais abundantes na atmosfera terrestre e um dos principais componentes do gás natural. Trata-se de um hidrocarboneto simples, incolor e inodoro, com grande importância tanto para a indústria como para o meio ambiente. Sua estrutura molecular é composta por um átomo de carbono ligado a quatro átomos de hidrogênio, o que lhe confere uma grande estabilidade química e o torna altamente inflamável.
+    Propriedades Químicas e Físicas
+    O metano é um gás leve, com densidade menor do que a do ar, o que faz com que se eleve rapidamente para a atmosfera quando liberado. Sua temperatura de ebulição é extremamente baixa, cerca de -161,5°C, o que significa que ele permanece no estado gasoso em temperaturas ambientais normais. Além disso, o metano possui uma pouca solubilidade em água, o que significa que ele tende a se dispersar rapidamente quando entra em contato com ambientes aquáticos.
+    Embora o metano seja inodoro por natureza, um odor artificial é adicionado ao gás usado para consumo doméstico, para facilitar a detecção de vazamentos. Esse gás também tem a característica de ser altamente inflamável; quando misturado com ar em determinadas proporções, ele pode formar uma mistura explosiva. Devido a essa alta inflamabilidade, seu controle e manuseio em ambientes industriais e residenciais requerem precauções rigorosas.
+    Fontes de Metano
+    O metano é gerado de maneira natural e artificial. As principais fontes naturais de metano são os ambientes que favorecem a decomposição anaeróbica (sem oxigênio) de matéria orgânica. Isso inclui pântanos, áreas alagadas, sedimentos oceânicos e o permafrost (solo permanentemente congelado). Em todos esses locais, as bactérias metanogênicas quebram a matéria orgânica, liberando metano como subproduto.
+    Outras fontes naturais incluem os tratos digestivos de animais ruminantes, como vacas e ovelhas, que liberam metano por meio da eructação (arroto). A decomposição de matéria orgânica em solos úmidos também contribui significativamente para a emissão de metano. As erupções vulcânicas e a atividade geotérmica também podem liberar pequenas quantidades desse gás.
+    No entanto, as fontes antropogênicas (humanas) de metano têm ganhado destaque nas últimas décadas devido ao aumento das emissões associadas à agropecuária intensiva, extração de combustíveis fósseis e o uso de aterros sanitários. Em ambientes urbanos, o metano também é liberado de estabelecimentos de tratamento de esgoto e instalações industriais.
+    O setor agropecuário, em particular, contribui de maneira substancial para as emissões de metano. O processo digestivo dos animais ruminantes, como bovinos e ovinos, gera grandes quantidades de metano, que é liberado para a atmosfera. Além disso, a decomposição de resíduos orgânicos em aterros sanitários produz metano em grandes quantidades, uma vez que esses resíduos ficam submetidos a condições anaeróbicas. Outra fonte relevante são as plataformas de extração de gás natural e poços de petróleo, onde o metano pode ser liberado diretamente na atmosfera devido a falhas nos sistemas de vedação.
+    Usos do Metano
+    O metano tem uma gama diversificada de aplicações industriais. A mais comum delas é como combustível, devido ao seu alto poder calorífico. O gás natural, que é composto majoritariamente por metano, é amplamente utilizado em indústrias de energia, cozinhas domésticas, aquecimento de ambientes e até mesmo em veículos que utilizam gás natural veicular (GNV) como combustível.
+    Além de ser uma fonte de energia, o metano também é uma matéria-prima fundamental para a produção de vários produtos químicos. A síntese de amônia (NH₃), que é um componente chave na fabricação de fertilizantes, utiliza metano como matéria-prima. O metanol e o hidrogênio também são derivados do metano, sendo amplamente utilizados na indústria química para a produção de plásticos, solventes e outros compostos.
+    Além disso, o metano tem aplicação em geração de eletricidade por meio de usinas termoelétricas, onde sua combustão gera calor, que é convertido em energia elétrica. Em algumas áreas, o metano também é capturado de aterros sanitários e estações de tratamento de esgoto para gerar energia renovável, reduzindo as emissões e aproveitando um recurso que de outra forma seria desperdiçado.
+    Impactos Ambientais do Metano
+    Embora o metano seja um combustível valioso, ele é também um gás de efeito estufa (GEE) extremamente potente. De acordo com o Painel Intergovernamental sobre Mudanças Climáticas (IPCC), o metano tem um potencial de aquecimento global (PAG) cerca de 25 vezes superior ao do dióxido de carbono (CO₂), quando se considera um período de 100 anos. Isso significa que, mesmo estando em menores concentrações na atmosfera, o metano tem um efeito mais devastador sobre o aquecimento global do que o CO₂.
+    As emissões de metano são responsáveis por uma parte significativa do aquecimento global e das mudanças climáticas. Isso se deve principalmente às emissões associadas ao setor energético (extração e transporte de gás natural e petróleo), ao setor agropecuário (especialmente da digestão de ruminantes) e à decomposição de resíduos orgânicos em aterros sanitários.
+    Além disso, o metano não é apenas uma ameaça por sua contribuição direta ao aquecimento global. Quando chega à atmosfera, ele reage com outros poluentes, como o óxido nítrico (NO), formando ozônio troposférico (O₃), que é um poluente atmosférico prejudicial à saúde humana e à vegetação.
+    Estratégias para Mitigar as Emissões de Metano
+    Compreender as fontes e os impactos do metano é crucial para desenvolver estratégias eficazes de mitigação. Algumas das medidas mais promissoras incluem:
+    Captura de metano em aterros sanitários e estações de tratamento de esgoto. O gás pode ser utilizado para gerar energia ou ser processado para uso em outras indústrias.
+    
+    
+    Tecnologias de vedação em plataformas de petróleo e gás, para evitar o vazamento de metano durante a extração e o transporte.
+    
+    
+    Melhorias na alimentação de animais e no manejo de resíduos agropecuários para reduzir a emissão de metano proveniente da digestão.
+    
+    
+    Adoção de práticas agrícolas sustentáveis, como a fertilização controlada, que pode reduzir as emissões de metano dos solos.
+    
+    
+    Desenvolvimento de novos métodos de combustão, para melhorar a eficiência do uso do metano e reduzir sua liberação para a atmosfera.
+    
+    
+    Conclusão
+    O metano é um gás com grande importância na sociedade moderna, principalmente por seu uso como fonte de energia e matéria-prima para a indústria química. No entanto, suas potentes propriedades de efeito estufa e as emissões significativas provenientes de fontes naturais e antropogênicas representam uma ameaça crescente para o meio ambiente. É essencial que novas tecnologias e políticas públicas sejam desenvolvidas para reduzir as emissões de metano, mitigar os impactos das mudanças climáticas e promover uma utilização mais sustentável desse recurso natural.
+    
+
+
+        </p>
+    </div>
+
+
+
+</body>
+</html>

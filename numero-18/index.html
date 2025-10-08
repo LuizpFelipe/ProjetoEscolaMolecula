@@ -5,9 +5,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MOLECULA DO ETENO</title>
    <style>
-       /* Estilo Geral do Corpo */
        body {
-           font-family: 'Arial', sans-serif;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
            margin: 0;
            padding: 0;
            background-color: #fafafa;
@@ -15,11 +14,10 @@
            line-height: 1.6;
        }
 
-       /* Cabeçalho */
        header {
-           background-color: #ff0000;
+           background-color: #96f8ff;
            color: rgb(0, 0, 0);
-           padding: 40px;
+           padding: 40px 20px;
            text-align: center;
            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
        }
@@ -30,7 +28,23 @@
            font-weight: 700;
        }
 
-       /* Estilo das Seções */
+       header .video-container {
+           margin-top: 20px;
+           padding: 10px;
+           background-color: #000000;
+           border-radius: 8px;
+           max-width: 600px;
+           margin-left: auto;
+           margin-right: auto;
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       }
+
+       header .video-container video {
+           width: 100%;
+           height: 300px;
+           border-radius: 8px;
+       }
+
        section {
            max-width: 900px;
            margin: 20px auto;
@@ -70,26 +84,16 @@
            margin-bottom: 10px;
        }
 
-       /* Estilos para o vídeo */
-       .video-container {
-           margin: 40px 0;
-           text-align: center;
+       .estrutura {
+           font-family: monospace;
+           white-space: pre;
            background-color: #f0f0f0;
-           padding: 20px;
-           border-radius: 8px;
-           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-           width: 100%;
-           max-width: 800px;
-           margin: 40px auto;
+           padding: 10px;
+           border-radius: 5px;
+           display: inline-block;
+           margin-bottom: 20px;
        }
 
-       .video-container video {
-           width: 100%;
-           height: 450px;
-           border-radius: 8px;
-       }
-
-       /* Rodapé */
        footer {
            background-color: #4a90e2;
            color: white;
@@ -101,7 +105,6 @@
            font-size: 14px;
        }
 
-       /* Responsividade */
        @media (max-width: 768px) {
            header h1 {
                font-size: 28px;
@@ -115,8 +118,8 @@
                font-size: 1em;
            }
 
-           .video-container video {
-               height: 300px;
+           header .video-container video {
+               height: 200px;
            }
        }
    </style>
@@ -125,6 +128,12 @@
 
    <header>
        <h1>MOLECULA DO ETENO</h1>
+       <div class="video-container">
+           <video autoplay loop muted>
+               <source src="molecula.mp4" type="video/mp4" />
+               Seu navegador não suporta o vídeo.
+           </video>
+       </div>
    </header>
 
    <section>
@@ -157,19 +166,25 @@
            <li>É utilizado para promover o amadurecimento de frutas devido à sua capacidade de atuar como um hormônio vegetal.</li>
        </ul>
 
-       <!-- Vídeo em modo janela -->
-       <div class="video-container">
-           <video autoplay loop muted>
-               <source src="molecula.mp4" type="video/mp4" />
-               Seu navegador não suporta o vídeo.
-           </video>
+       <!-- NOVA SEÇÃO ADICIONADA -->
+       <h2>Fórmulas da Molécula de Eteno</h2>
+
+       <p><strong>Fórmula molecular:</strong> C<sub>2</sub>H<sub>4</sub></p>
+
+       <p><strong>Fórmula estrutural condensada:</strong></p>
+       <div class="estrutura">
+           H₂C=CH₂
        </div>
 
+       <p><strong>Fórmula estrutural expandida:</strong></p>
+       <div class="estrutura">
+           H   H<br>
+            \ /<br>
+             C=C<br>
+            / \<br>
+           H   H
+       </div>
    </section>
-
-   <footer>
-       <p>© 2025 - Molecula do Eteno. Todos os direitos reservados.</p>
-   </footer>
 
 </body>
 </html>

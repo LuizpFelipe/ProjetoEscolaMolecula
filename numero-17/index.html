@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página do Eteno</title>
+    <style>
+        /* Estilo básico para o corpo da página */
+        body {
+            background-color: #e0f7fa; /* Azul claro */
+            font-family: Arial, sans-serif;
+            color: #00695c; /* Verde escuro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: #004d40; /* Verde escuro */
+            font-size: 3em;
+            margin-top: 50px;
+        }
+
+        /* Estilo para o vídeo com proporção 16:9 e espaço ao redor */
+        .video-molecula {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            padding-top: 56.25%; /* Altura proporcional para 16:9 */
+            margin: 50px auto; /* Espaço vertical maior e centralizado */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: black; /* fundo para quando o vídeo carregar */
+        }
+
+        .video-molecula video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* mantém proporção e preenche o container */
+        }
+
+        /* Estilo para as seções de conteúdo */
+        .resumo-molecula,
+        .pesquisa-molecula {
+            background-color: #ffffff; /* Fundo branco */
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .resumo-molecula h2,
+        .pesquisa-molecula h2 {
+            color: #004d40; /* Verde escuro */
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #00796b; /* Verde mais suave */
+        }
+
+        .conteiner-conteúdo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-Vindo à Página do Eteno</h1>
+
+    <div class="video-molecula">
+        <video autoplay loop muted>
+            <source src="molecula.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+
+    <div class="resumo-molecula">
+        <h2>Resumo sobre o Eteno</h2>
+        <p>
+            O eteno, também chamado de etileno, é um hidrocarboneto insaturado de fórmula molecular C₂H₄, pertencente à
+            família dos alcenos. Sua estrutura apresenta dois átomos de carbono ligados por uma ligação dupla (C=C), e
+            cada carbono está ligado a dois átomos de hidrogênio. Os carbonos estão em hibridização sp², com ângulos de
+            ligação de aproximadamente 120°, formando uma geometria plana trigonal.
+        </p>
+        <p>
+            É um gás incolor, levemente mais denso que o ar, inflamável e insolúvel em água, mas solúvel em solventes
+            orgânicos. Por possuir ligação dupla, é considerado insaturado.
+        </p>
+        <p>
+            Na indústria, o eteno é uma das substâncias mais importantes, usado principalmente na produção de polietileno,
+            o plástico mais fabricado no mundo. Já na agricultura, o eteno atua como hormônio vegetal, sendo responsável
+            por estimular o amadurecimento dos frutos.
+        </p>
+    </div>
+
+    <div class="conteiner-conteúdo">
+        <div class="pesquisa-molecula">
+            <h2>Pesquisa sobre o Eteno</h2>
+            <p><strong>Fórmula molecular:</strong> C₂H₄</p>
+            <p><strong>Massa molecular total:</strong> 28 u (ou 28 g/mol)</p>
+
+            <h3>🔹 Propriedades físicas</h3>
+            <p><strong>Estado físico:</strong> Gás incolor</p>
+            <p><strong>Odor:</strong> Levemente adocicado (em altas concentrações)</p>
+            <p><strong>Massa molar:</strong> 28 g/mol</p>
+            <p><strong>Ponto de fusão:</strong> –169 °C</p>
+            <p><strong>Ponto de ebulição:</strong> –104 °C</p>
+            <p><strong>Densidade:</strong> ~1,18 g/L (um pouco mais denso que o ar)</p>
+            <p><strong>Solubilidade:</strong> Pouco solúvel em água, mas solúvel em solventes orgânicos (ex.: éter,
+                acetona)</p>
+            <p><strong>Inflamabilidade:</strong> Altamente inflamável e explosivo em concentrações de 2,7–36% no ar.</p>
+        </div>
+    </div>
+</body>
+</html>
